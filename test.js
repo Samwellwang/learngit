@@ -50,7 +50,7 @@ function arrManage() {
                 //console.log("___",L[j]);
             }
         }
-        console.log("temp", tempList);
+        //console.log("temp", tempList);
         for (var k in tempList) {
             if (tempList[k].radio == "编辑") {
                 result.push(tempList[k]);
@@ -60,7 +60,14 @@ function arrManage() {
                 break;
             }
         }
-
+    }
+    for (var n in result) {
+        var idTemp = result[n]._id;
+        for (var m in result) {
+            if (result[m]._id == idTemp) {
+                result.splice(m + 1, 1);
+            }
+        }
     }
     return result;
 }

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name=\ "viewport\"content=\ "width=device-width, initial-scale=1, maximum-scale=1\">
+    <style>
+        img {
+            max-width: 100%
+        }
+        
+        video {
+            max-width: 100%
+        }
+        
+        body {
+            padding: 0 3%
+        }
+        
+        p {
+            word-break: break-all;
+        }
+    </style>
+</head>
+
+<body>\n
+    <style id=\ "braft-editor-style\">
+        \n a {
+            \n color: rgb(244, 244, 244);
+            \n text-decoration: underline;
+            \n
+        }
+        
+        \n\n a::before {
+            \n background-repeat: no-repeat;
+            \n width: 1em;
+            \n height: 1em;
+            \n vertical-align: text-top;
+            \n display: inline-block;
+            \n content: '';
+            \n line-height: 1;
+            \n margin-right: 3px;
+            \n
+        }
+        
+        \n\n a[href]::before {
+            \n background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAEKADAAQAAAABAAAAEAAAAAA0VXHyAAABC0lEQVQ4EcVSMW7CQBCctULppA0i1LwlEr+ITAcFJQVPQInokOjyBxo+kipFHEQLuMXLrMOeDiQDqfDJ2tXdzNzN3AH3/uSWAzxP9VVKzAyrCXrrviyc9+DNpWpkVbwY5ijUdnziTV3tzDVVIPV1FZxwak9gxO0O/W2BIcnCsaHfggKZi1kNGUQ+RUssJUG3AiomjymmX2+yi4neB4Hmh+b02aoWBHtRjC8RXeDEj0/+pwYBXk8mgpz/L0p80tyQ/r+b7zqyPOpEg4VzgIdoQryFBteZH0PkRvE7qBVwQRPaFPiB4qmaS7BaD+QvK04EC044r5Y+dwk3wHDLGHNVwMD2fI/55NbHAvfvD7uQV+HAsyIfAAAAAElFTkSuQmCC');
+            \n
+        }
+        
+        \n\n a:not([href])::before {
+            \n background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAEKADAAQAAAABAAAAEAAAAAA0VXHyAAABj0lEQVQ4EcWQvUsDQRDFZy6JNhKIUcmHVhEstLKSCKJ2NmltbUQlJBcrUbAXBTWHEYyWNrbaKIJ/gGBtIwGj5CRR0ggqJje+A/dYJMQyB8vMzc7v7Zsh6vTH/xmIHcqI80076JtCcxVnu2LyieLaCsQOZFwadCVEfQBKzBQXoW7EJdvkoitiKKW/MW7JhNOkGxc2mNZfcpzwM40C/oLImupvKeDCTaFrNAUNg0xY3nKBcoZKEKxDJKQE/CrRI+A9Euphg5YBvEf3pWwEKBWzaB71CDGdqv6WDnA5hlO1s3yEJdUgMuQ0qIBaE69fGj7KKQFviRFL+qF+BsU7AEnMmYT9VCXLF9G8vOK/C3sIKlBFzwE7lIfADBo/sVoTL9UdohCEV1ALw/atgvSo72AOF7ad483fhl7Mvgo3uxCrkZ8yOqhyz4EwvWGe8GBBht1LwBsujNTG3bSd5nsF6dHbQdSSRXGoiMIHgArGSSB/8gVo9jnNDzqk554DbPwYcy7gPAIeQNM5B2iyHawLdS7/Aaa9g2B/Pz2tAAAAAElFTkSuQmCC')\n
+        }
+        
+        \n p {
+            \n min-height: 1em;
+            \n
+        }
+        
+        \n
+    </style>
+    <p>test. test. test. test. test. test. test. test. test. </p>
+    <p></p>
+    <div class=\ "media-wrap image-wrap\"><img controls=\ "\" src=\ "https://prodxa.digitalexpo.com/expo/1/rich/20200924180457719_5s8hbviz.png\"/></div>
+    <h1>test. test. test. <strong>BOLD BOLD BOLD BOLD BOLD BOLD   </strong><em>Italic Italic Italic Italic Italic Italic Italic  <strong> bold italic   bold italic   bold italic   bold italic   </strong></em><u> under line   under line   under line     </u>
+        <span
+            style=\ "text-decoration:line-through\">delete line delete line delete line delete line delete line </span>head 1 head 1 head 1</h1>\n
+    <script>
+        \
+        nfunction toApp(name, options) {\
+            n options = options || {};\
+            n
+            try {\
+                n parent.postMessage(options, '*')\ n
+            } catch (e) {}\
+            n\ n
+            if (window.hex) {\
+                n window.hex[name](JSON.stringify(options));\
+                n
+            } else if (window.webkit && window.webkit.messageHandlers) {\
+                n window.webkit.messageHandlers[name].postMessage(options);\
+                n
+            }\
+            n
+        }\
+        n\ nconst TYPE_TO_EVENT_NAME = {\
+                n INFORMATION: 'information', // 资讯\n  LIVE: 'live', // 直播\n  MEETING: 'meeting', // 会议\n  EXHIBITS: 'exhibitiorItemDetail', // 展品\n  EXHIBITOR: 'exhibitior', // 展商\n  NOTICE: 'exPreview', // 必看\n  EXHIBITORGROUP:'exhibitiorGroup'\n};\n\nfunction getOption(type, id, exhibitorId) {\n  switch (type) {\n    case 'INFORMATION':\n      return { infoId: id, type };\n    case 'LIVE':\n      return { liveId: id, type };\n    case 'MEETING':\n      return { meetId: id, type };\n    case 'EXHIBITS':\n      return { itemId: id, exhibitorId, type };\n    case 'EXHIBITOR':\n      return { itemId: id, type };\n    case 'NOTICE':\n      return { previewId: id, exhibitorId, type };\n    case 'EXHIBITORGROUP':\n      return { itemId: id, type };\n    default:\n      break;\n  }\n}\n\n// pc 端 样式 为 白底蓝字 预览存在问题，产品说暂时先别动\nconst __isMobile = /Android|webOS|iPhone|iPod|BlackBerry/i.test(\n  navigator.userAgent\n);\n\nif (!__isMobile) {\n  const __styleEle = document.getElementById('braft-editor-style');\n  __styleEle.textContent += 'a{  color: #2F54EB;}';\n}\n\nwindow.onload = function () {\n  function innerSiteLinkClickHandler(e) {\n    e.stopPropagation();\n    e.preventDefault();\n    const {\n      target: {\n        dataset: { id, type, exhibitorid },\n      },\n    } = e;\n    toApp(TYPE_TO_EVENT_NAME[type], getOption(type, id, exhibitorid));\n  }\n\n  function openUrl(e) {\n    e.stopPropagation();\n    e.preventDefault();\n    const { target } = e;\n    toApp('openUrl', { url: target.href, type: 'openUrl' });\n  }\n  \n  const linksWithHref = document.querySelectorAll('a[href]');\n  linksWithHref.forEach((item) => {\n    item.addEventListener('click', openUrl);\n  });\n\n\n  const innerSiteLink = document.querySelectorAll('a[data-id]:not([href])');\n  innerSiteLink.forEach((item) =>\n    item.addEventListener('click', innerSiteLinkClickHandler)\n  );\n};\n
+    </script>\n
+    <div id=\ "mark\"></div>
+    <script>
+        const isMobile = /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent);
+        const styleEle = document.createElement(\"style\");if(isMobile){styleEle.innerHTML=\"html,body{background-color:rgb(30,33,54)}*{color:white}\"}else{styleEle.innerHTML=\"html,body{background-color:white}*{color:black}\"}document.head.appendChild(styleEle);
+    </script>
+</body>
+
+</html>

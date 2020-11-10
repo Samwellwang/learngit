@@ -13,7 +13,7 @@
 
 --------------------------以上为本地版本库----------------------------
 
-
+//$ git clone git@github.com:michaelliao/gitskills.git clone 远程库
 
 Git is a distributed version control system.
 Git is a free software.

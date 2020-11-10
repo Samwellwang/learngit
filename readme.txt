@@ -14,14 +14,11 @@
 --------------------------以上为本地版本库----------------------------
 
 //$ git clone git@github.com:michaelliao/gitskills.git clone 远程库
+//$ git push origin master 提交本地库到远程库  第一回push 添加-u 参数表示本地 master和远程master 连接
 
 Git is a distributed version control system.
 Git is a free software.
 Git one
 Git TWO 
 Git three 
-<<<<<<< HEAD
-git branch and simple
-=======
 git branch and simples
->>>>>>> dev
